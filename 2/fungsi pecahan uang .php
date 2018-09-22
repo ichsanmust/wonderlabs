@@ -1,6 +1,5 @@
 <?php 
-	$uang = 145000 ; // Input : in ubah saja tergantung uang yang akan di pecahkan
-			
+function pecahanUang($uang){		
 	$pembulatanUang = (ceil($uang / 100)) * 100;
 	$dataPecahanUang = array(
 		100000,
@@ -29,4 +28,7 @@
 
 	echo 'Input :' .$uang .'<br>';
 	echo 'Output :' .json_encode($dataJumlahUangPecahan);
+}
+
+pecahanUang(145000); // ubah sesuka hati
 ?>
